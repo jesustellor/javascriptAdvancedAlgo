@@ -1,19 +1,17 @@
 function pairElement(str) {
-    const dnaRegEx = /[ATCG]/;
-    const atPair = ['A', 'T'];
-    const taPair = ['T', 'A'];
-    const cgPair = ['C', 'G'];
-    const gcPair = ['G', 'C'];
-    // let matchBasePair = function(char, ){
-    //   switch(char){
-    //     case 'A': ['A', 'T']
-    //   }
-    // }
-    const splitArray = str.match(dnaRegEx).input.split('')
-      if(splitArray.shift() == str.match(dnaRegEx)){
-        return "Hello"
-      }
-    return;
+  const dnaRegEx = /[ATCG]/;
+  const atPair = ['A', 'T'];
+  const taPair = ['T', 'A'];
+  const cgPair = ['C', 'G'];
+  const gcPair = ['G', 'C'];
+
+  const splitArray = str.match(dnaRegEx).input.split('')
+  for(let i = 0; i < str.length; i++){
+     if(splitArray[i] == 'A'){
+       splitArray.replace();
+     }
   }
-  
-  console.log(pairElement("AGCG"));
+  return 'Hello';
+}
+
+console.log(pairElement("TAGCG"));
