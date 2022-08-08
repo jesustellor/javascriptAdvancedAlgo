@@ -1,17 +1,35 @@
 function pairElement(str) {
-  const dnaRegEx = /[ATCG]/;
-  const atPair = ['A', 'T'];
-  const taPair = ['T', 'A'];
-  const cgPair = ['C', 'G'];
-  const gcPair = ['G', 'C'];
-
-  const splitArray = str.match(dnaRegEx).input.split('')
-  for(let i = 0; i < str.length; i++){
-     if(splitArray[i] == 'A'){
-       splitArray.replace();
+  const dnaRegEx = /[ATCG]+/
+  if(str.match(dnaRegEx) == str){
+     const matchedPair = function(char, pairdArray){
+     switch(char) {
+      case "A":
+      pairdArray.push(["A", "T"])
+      break;
+      case "T":
+      pairdArray.push(["T", "A"])
+      break;
+      case "C":
+      pairdArray.push(["C", "G"])
+      break;
+      case "G":
+      pairdArray.push(["G", "C"])
+      break;
+      default:
+       }
      }
-  }
-  return 'Hello';
-}
-
-console.log(pairElement("TAGCG"));
+ const paired = []
+ for(let i = 0; i < str.length; i++){
+   matchedPair(str[i], paired)
+ }
+ return paired
+ } else {
+   return 'DNA Sequence Incorrect'
+ }
+ }
+ 
+ 
+ 
+ 
+ 
+ console.log(pairElement("ACLGA"));
