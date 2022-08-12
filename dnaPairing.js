@@ -22,33 +22,8 @@ function pairElement(str) {
       default:
        }
      }
-<<<<<<< HEAD
   }
   return 'Hello';
 }
 
 console.log(pairElement("TAGCG"));
-
-//make a funcion
-=======
-     // create empty array to push paired DNA to
- const paired = []
-  // loop through str and call matchedPair function on each 
-  //character and pass in empty array as second argument
- for(let i = 0; i < str.length; i++){
-   matchedPair(str[i], paired)
- }
- // return paired array with paired DNA
- return paired
- // if str does not match DNA string regex return error message
- } else {
-   return 'DNA Sequence Incorrect'
- }
- }
- 
- 
- 
- 
- // Test Cases
- console.log(pairElement("ACLGA"));
->>>>>>> 17451ab796bac5f3de0db411727f584011215b78
