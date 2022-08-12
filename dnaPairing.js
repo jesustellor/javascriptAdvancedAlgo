@@ -23,7 +23,7 @@ function pairElement(str) {
        }
      }
   }
-  return 'Hello';
+  return 'DNA string is not valid';
 }
 
 console.log(pairElement("TAGCG"));
