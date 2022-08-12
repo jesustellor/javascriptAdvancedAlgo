@@ -15,3 +15,5 @@ function pairElement(str) {
 }
 
 console.log(pairElement("TAGCG"));
+
+//make a funcion
