@@ -16,5 +16,6 @@ function uniteUnique(...arr) {
     // return new array
     return newArr
   }
+  // we could also just return [...new Set(arr.flat())]
   
   console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
