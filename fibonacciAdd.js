@@ -11,17 +11,13 @@ const sumFibs = n => {
       fibArray.push(nextNum);
       prev = current;
       current = nextNum; 
-    }
-  }
-    // remove last item in array and add all odd numbers
-    if(current > n){
+    } else if(current > n){
       fibArray.pop()
-      for(let i = 0; i < fibArray.length; i++){
+    }
       if (fibArray[i] % 2 === 1) {
       sum = sum + fibArray[i];
       }
-     } 
-    } 
+  }
   return sum;
   };
-  console.log(sumFibs(4))
+  console.log(sumFibs(4));
